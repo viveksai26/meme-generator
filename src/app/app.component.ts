@@ -12,7 +12,7 @@ export class AppComponent {
   title = 'memeGenerator';
   selectedPhoto: any;
   images = [
-    { asset: '/assets/meme-background/eggs.jpg', name: 'eggs' },
+    { asset: 'assets/meme-background/eggs.jpg', name: 'eggs' },
     { asset: 'assets/meme-background/pinapple.jpg', name: 'pinapple' },
     { asset: 'assets/meme-background/corn.jpg', name: 'corn' },
     { asset: 'assets/meme-background/mango.jpg', name: 'mango' },
