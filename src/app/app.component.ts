@@ -24,8 +24,8 @@ export class AppComponent {
   }
   openDialog(image: any): void {
     this.dialog.open(PhotoViewerComponent, {
-      width: '60vw',
-      height: '85vh',
+      width: '75vw',
+      height: '90vh',
       data: {
         image
       }

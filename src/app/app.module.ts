@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppMaterialModule } from 'src/modules/shared/style/app-material.module';
 import { PhotoViewerComponent } from 'src/modules/features/public/photo-viewer/photo-viewer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, PhotoViewerComponent],
@@ -18,6 +19,7 @@ import { PhotoViewerComponent } from 'src/modules/features/public/photo-viewer/p
     CommonModule,
     BrowserAnimationsModule,
     RouterModule,
+    ReactiveFormsModule,
     HttpClientModule,
     AppRoutingModule,
     AppMaterialModule,
