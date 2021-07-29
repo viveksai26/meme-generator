@@ -1,7 +1,7 @@
 import { Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { MatDialog, MatDialogConfig, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Canvas, loadImage } from 'canvas';
+import { loadImage } from 'canvas';
 @Component({
   selector: 'app-photo-viewer',
   templateUrl: './photo-viewer.component.html',
@@ -9,7 +9,7 @@ import { Canvas, loadImage } from 'canvas';
 })
 export class PhotoViewerComponent implements OnInit {
   @ViewChild('canvasEl')
-  canvasEl!: ElementRef<Canvas>;
+  canvasEl!: ElementRef;
   context: any;
   textForm!: FormGroup;
   image: any;

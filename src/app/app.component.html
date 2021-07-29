@@ -6,7 +6,15 @@
           <h1>Create Your Own Meme</h1>
         </div>
         <div class="row">
-            <mat-card class="col-md-3 ml-3" *ngFor="let image of images" (click)="selectPhoto(image)">
+          <mat-card class="col-md-3 ml-3">
+            <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+              <label id="mylabel" for="myfile" style="cursor: pointer;">
+                <i class="fa fa-upload fa-3x" aria-hidden="true"></i>
+                <input type="file" id="myfile" name="myfile" (change)="onFileChanged($event)">
+              </label>
+            </div>
+          </mat-card>
+            <mat-card class="col-md-3 ml-3" *ngFor="let image of images" style="cursor: pointer;" (click)="selectPhoto(image)">
               <img [src]="image.asset">
             </mat-card>
         </div>

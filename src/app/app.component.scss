@@ -3,3 +3,12 @@ img {
     height: 100%; 
     object-fit: contain;
 }
+
+#myfile {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+    width: 0.1px;
+    height: 0.1px;
+    overflow: hidden;
+    }

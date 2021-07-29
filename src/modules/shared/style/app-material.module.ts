@@ -9,6 +9,10 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatFileUploadModule } from 'angular-material-fileupload';
+
+
+
 @NgModule({
   imports: [
     MatButtonModule,
@@ -20,7 +24,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatSnackBarModule,
     MatDialogModule,
     MatMenuModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatFileUploadModule
   ],
   exports: [
     MatButtonModule,
@@ -32,7 +37,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatSnackBarModule,
     MatDialogModule,
     MatMenuModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatFileUploadModule
   ]
 })
 export class AppMaterialModule {}
